@@ -1,0 +1,9 @@
+logging:
+  level:
+       org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+       org.springframework.web.client.RestTemplate: DEBUG
+spring:
+  data:
+    mongodb:
+      port: 0
+debug: true
