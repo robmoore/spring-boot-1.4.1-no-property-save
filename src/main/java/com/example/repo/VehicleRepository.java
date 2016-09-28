@@ -7,9 +7,9 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-interface VehicleRepository<T extends Vehicle> extends CrudRepository<Vehicle, ObjectId> {
+interface VehicleRepository<T extends Vehicle> extends CrudRepository<T, ObjectId> {
     @Override
-    <S extends Vehicle> S save(S entity);
+    <S extends T> S save(S entity);
 }
 
 interface TaxiRepository
